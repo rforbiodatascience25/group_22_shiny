@@ -98,6 +98,22 @@ ui <- page_fluid(
       mainPanel(
         verbatimTextOutput(outputId = "rna")
       )
-    )
+    ),
+    # Transcribe Codons to Amino-acids
+    card(
+      card_header("Transcribe RNA codons to Amino-acids: "),
+      textInput(
+        inputId = "ribbosomeInput",
+        label = "Enter RNA codons to be transcribed.",
+        value = ""
+      )
+    ),
+    # Transcribed Amino Acid output card
+    card(
+      card_header("Transcribed Amino-acids:"),
+      mainPanel(
+        verbatimTextOutput(outputId = "aminoAcids")
+      )
+    ),
   )
 )
