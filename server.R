@@ -7,4 +7,7 @@ server <- function(input, output) {
   output$rna <- renderText({
     transcribe_dna(dna = input$vdna)
   })
+  output$aminoAcids <- renderText({
+    translate_rna(input$ribbosomeInput)
+  })
 }
