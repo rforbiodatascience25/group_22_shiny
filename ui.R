@@ -78,10 +78,12 @@ ui <- page_fluid(
     card(
       card_header("Virtual Gene Output"),
       mainPanel(
-        verbatimTextOutput(outputId = "dna")
+        verbatimTextOutput(outputId = "dna"),
+        plotOutput(outputId = "distPlot")
       )
     ),
     
+
     # RNA transcription input
     card(
       card_header("Virtual RNA Transcribe"),
