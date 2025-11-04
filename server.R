@@ -1,3 +1,6 @@
+# Load needed functions
+source(file = "app_functions.R")
+
 # Define the Server (Backend)
 server <- function(input, output) {
   output$dna <- renderText({
