@@ -17,6 +17,7 @@ gene_dna <- function(length, base_probs = c(0.25, 0.25, 0.25, 0.25)){
     x = dna_vector,
     collapse = "")
   return(dna_string)
+  
 }
 
 # Define the User Interface (Frontend)
