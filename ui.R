@@ -18,7 +18,10 @@ ui <- page_fluid(
     col_widths = 12,
     card(
       titlePanel("About"),
-      helpText("The app models the central dog(🐕)ma :OOOOOO")
+      helpText("The following app can be used to the extract the transcripted mRNA sequence from a DNA sequence. 
+      The app also contains amino acid data, therefore the translated amino acid sequence can be obtained from the mRNA sequence.
+      A random DNA sequence can also be generated, with variable probabilities. The app also creates a bar chart on the distribution of the nucleotide bases."
+     )
     )
   ),
   
